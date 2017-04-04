@@ -2,6 +2,9 @@
 
 site 'https://supermarket.getchef.com/api/v1'
 
+cookbook 'tildewill',
+  :path => './custom-cookbooks/tildewill'
+
 cookbook 'sprout-rbenv',
   :github => 'pivotal-sprout/sprout-rbenv'
 

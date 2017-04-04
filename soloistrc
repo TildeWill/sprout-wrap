@@ -33,34 +33,43 @@ recipes:
 
 # apps (editors)
 - sprout-osx-apps::textmate_preferences
-- sprout-jetbrains-editors::rubymine
+- sprout-jetbrains-editors::intellij-community
+
+# Custom
+- tildewill::login_items
 
 node_attributes:
+#  keyboard_preferences:
+#      key_repeat_rate_lower_is_faster: 1
+#      initial_repeat_delay_lower_is_shorter: 15
+#  java:
+#    jdk_version: ''#intentionally left blank to select the `java` cask rather than `java6`
+  bash_it:
+    custom_plugins:
+      tildewill:
+        - bash_it/custom/tildewill.bash
   sprout:
+    jetbrains-editors:
+      preferences:
+        repository: https://github.com/TildeWill/pivotal_ide_prefs.git
+#      application:
+#        jvm_version: 1.8+
     git:
       domain: pivotal.io
       authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
+        - initials: wr
+          name: Will Read
+          username: wread
       projects:
         -
           name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+          url: https://github.com/TildeWill/sprout-wrap.git
     terminal:
       default_profile: 'Pro'
     settings:
       clock_format: EEE MMM d  h:mm:ss a
     dock_preferences:
-      orientation: 'left'
+      orientation: 'bottom'
       auto_hide: true
       clear_apps: true
       tile_size: 35
@@ -86,15 +95,13 @@ node_attributes:
     casks:
       - firefox
       - flycut
-      - rowanj-gitx
-      - github-desktop
       - google-chrome
       - google-drive
       - google-hangouts
-      - macvim
       - skype
-      - textmate
+      - atom
       - vagrant
+      - docker
       - virtualbox
       - xquartz
       - xscope
