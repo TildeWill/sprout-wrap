@@ -1,0 +1,22 @@
+{
+  "name": "tildewill",
+  "version": "1.0.0",
+  "description": "Custom cookbook for my computers",
+  "long_description": "Custom cookbook for my computers",
+  "maintainer": "Will Read",
+  "maintainer_email": "will.read@gmail.com",
+  "license": "None",
+  "platforms": {},
+  "dependencies": {
+  },
+  "recommendations": {},
+  "suggestions": {},
+  "conflicting": {},
+  "providing": {},
+  "replacing": {},
+  "attributes": {},
+  "groupings": {},
+  "recipes": {
+    "login_items":"Sets up some apps to start on login"
+  }
+}
