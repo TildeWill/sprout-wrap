@@ -33,7 +33,7 @@ recipes:
 
 # apps (editors)
 - sprout-osx-apps::textmate_preferences
-- sprout-jetbrains-editors::intellij-community
+- sprout-jetbrains-editors::intellij
 
 # Custom
 - tildewill::login_items
@@ -102,6 +102,7 @@ node_attributes:
       - atom
       - vagrant
       - docker
+      - slack
       - virtualbox
       - xquartz
       - xscope

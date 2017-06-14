@@ -129,6 +129,11 @@ GIT
       osx (>= 0.0.0)
       sprout-base (>= 0.0.0)
 
+PATH
+  remote: ./custom-cookbooks/tildewill
+  specs:
+    tildewill (1.0.0)
+
 DEPENDENCIES
   build-essential (= 3.2.0)
   mingw (= 0.1.1)
@@ -145,4 +150,5 @@ DEPENDENCIES
   sprout-ruby (>= 0)
   sprout-ssh (>= 0)
   sprout-terminal (>= 0)
+  tildewill (>= 0)
 
