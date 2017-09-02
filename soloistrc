@@ -32,7 +32,6 @@ recipes:
 - sprout-postgresql
 
 # apps (editors)
-- sprout-osx-apps::textmate_preferences
 - sprout-jetbrains-editors::intellij
 
 # Custom
@@ -86,23 +85,24 @@ node_attributes:
       - node
       - pstree
       - qt
+      - rbenv-binstubs
       - ssh-copy-id
       - tmux
       - tree
       - watch
       - wget
-      - rbenv-binstubs
     casks:
+      - atom
+      - docker
       - firefox
       - flycut
       - google-chrome
       - google-drive
       - google-hangouts
       - skype
-      - atom
+      - slack
       - vagrant
       - docker
-      - slack
       - virtualbox
       - xquartz
       - xscope
