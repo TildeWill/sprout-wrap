@@ -76,16 +76,17 @@ node_attributes:
   homebrew:
     taps:
       - universal-ctags/universal-ctags
+      - cloudfoundry/tap
     formulas:
       - name: universal-ctags
         head: true
       - ag
+      - cf-cli
       - chromedriver
       - imagemagick
       - node
       - pstree
       - qt
-      - rbenv-binstubs
       - ssh-copy-id
       - tmux
       - tree
@@ -102,7 +103,6 @@ node_attributes:
       - skype
       - slack
       - vagrant
-      - docker
       - virtualbox
       - xquartz
       - xscope
